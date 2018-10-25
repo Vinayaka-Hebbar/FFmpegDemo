@@ -1,0 +1,14 @@
+prefix=/home/vinayaka/ffmpeg-3.4.4/android/armeabi
+exec_prefix=${prefix}
+libdir=/home/vinayaka/ffmpeg-3.4.4/android/armeabi/lib
+includedir=/home/vinayaka/ffmpeg-3.4.4/android/armeabi/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm
+Cflags: -I${includedir}
